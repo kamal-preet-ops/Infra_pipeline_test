@@ -74,3 +74,9 @@ resource "azurerm_virtual_machine" "main" {
     environment = "staging"
   }
 }
+
+resource "azurerm_resource_group" "RG1" {
+  name = "Test-pipeline-Rg"
+  location = "eastus"
+  
+}
